@@ -31,6 +31,13 @@ class SnippeMaster: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
+    override func viewWillAppear(_ animated: Bool) {
+        tableView.reloadData()
+        print("reloaded")
+        
+
+    }
+    
 
     // MARK: - Table view data source
 
@@ -59,7 +66,10 @@ class SnippeMaster: UITableViewController {
             PersistenceService.context.delete(deleteSnippet)
             PersistenceService.saveContext()
             tableView.reloadData()
+            
+           
         }
+        
     }
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true

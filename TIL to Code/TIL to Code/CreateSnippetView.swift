@@ -32,9 +32,12 @@ class CreateSnippetView: UIViewController {
             snippetData.title = snippetTitle.text!
             snippetData.desc = snippetDescription.text
             snippetData.code = snippetTxtArea.text!
+            snippetData.date = Date() as NSDate
             PersistenceService.saveContext()
             snippets.append(snippetData)
             print(snippets)
+            
+            performSegue(withIdentifier: "createToMaster", sender: self)
             
         }
         
