@@ -9,6 +9,8 @@
 import UIKit
 
 class CreateSnippetView: UIViewController {
+    
+    var snippets = [Snippet]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,14 +19,26 @@ class CreateSnippetView: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    @IBOutlet weak var snippetTitle: UITextField!
+    @IBOutlet weak var snippetDescription: UITextField!
+    @IBOutlet weak var snippetTxtArea: UITextView!
+    
+    @IBAction func btnSaveSnippet(_ sender: Any) {
+        
+        if snippetTitle.text != "" && snippetTxtArea.text != "" {
+            
+            let snippetData = Snippet(context: PersistenceService.context)
+            snippetData.title = snippetTitle.text!
+            snippetData.desc = snippetDescription.text
+            snippetData.code = snippetTxtArea.text!
+            PersistenceService.saveContext()
+            snippets.append(snippetData)
+            print(snippets)
+            
+        }
+        
     }
-    */
+
 
 }

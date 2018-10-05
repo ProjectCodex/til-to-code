@@ -19,6 +19,8 @@
 		4B73DDA02166F75C00F56BDC /* CreateSnippetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B73DD9F2166F75C00F56BDC /* CreateSnippetView.swift */; };
 		4B73DDA22166F7B400F56BDC /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B73DDA12166F7B400F56BDC /* PersistenceService.swift */; };
 		4B73DDA52166F80900F56BDC /* SnippetModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4B73DDA32166F80900F56BDC /* SnippetModel.xcdatamodeld */; };
+		4B73DDA82166FE6B00F56BDC /* Snippet+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B73DDA62166FE6B00F56BDC /* Snippet+CoreDataClass.swift */; };
+		4B73DDA92166FE6B00F56BDC /* Snippet+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B73DDA72166FE6B00F56BDC /* Snippet+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		4B73DD9F2166F75C00F56BDC /* CreateSnippetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSnippetView.swift; sourceTree = "<group>"; };
 		4B73DDA12166F7B400F56BDC /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
 		4B73DDA42166F80900F56BDC /* SnippetModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SnippetModel.xcdatamodel; sourceTree = "<group>"; };
+		4B73DDA62166FE6B00F56BDC /* Snippet+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Snippet+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4B73DDA72166FE6B00F56BDC /* Snippet+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Snippet+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,8 @@
 		0E198C352165069800BA832B /* TIL to Code */ = {
 			isa = PBXGroup;
 			children = (
+				4B73DDA62166FE6B00F56BDC /* Snippet+CoreDataClass.swift */,
+				4B73DDA72166FE6B00F56BDC /* Snippet+CoreDataProperties.swift */,
 				0E198C362165069800BA832B /* AppDelegate.swift */,
 				0E198C382165069800BA832B /* ViewController.swift */,
 				0E198C3A2165069800BA832B /* Main.storyboard */,
@@ -276,6 +282,8 @@
 				4B73DDA22166F7B400F56BDC /* PersistenceService.swift in Sources */,
 				0E198C392165069800BA832B /* ViewController.swift in Sources */,
 				4B73DD9C2166F68F00F56BDC /* Home.swift in Sources */,
+				4B73DDA92166FE6B00F56BDC /* Snippet+CoreDataProperties.swift in Sources */,
+				4B73DDA82166FE6B00F56BDC /* Snippet+CoreDataClass.swift in Sources */,
 				4B73DDA02166F75C00F56BDC /* CreateSnippetView.swift in Sources */,
 				0E198C372165069800BA832B /* AppDelegate.swift in Sources */,
 			);
