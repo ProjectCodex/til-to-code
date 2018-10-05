@@ -37,7 +37,7 @@ class CreateSnippetView: UIViewController {
             snippets.append(snippetData)
             print(snippets)
             
-            performSegue(withIdentifier: "createToMaster", sender: self)
+            //performSegue(withIdentifier: "createToMaster", sender: self)
             
         }
         

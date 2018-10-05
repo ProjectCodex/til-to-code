@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="dvD-fK-PrJ" userLabel="TitleStack">
-                                <rect key="frame" x="20" y="30" width="335" height="55.5"/>
+                                <rect key="frame" x="20" y="74" width="335" height="55.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Odz-32-cAf">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="20.5"/>
@@ -39,7 +39,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Xbe-UT-ph2" userLabel="DescStack">
-                                <rect key="frame" x="20" y="95.5" width="335" height="55.5"/>
+                                <rect key="frame" x="20" y="139.5" width="335" height="55.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dN3-CX-KEe">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="20.5"/>
@@ -60,7 +60,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="aIq-6U-58N" userLabel="CodeStack">
-                                <rect key="frame" x="20" y="163" width="335" height="370"/>
+                                <rect key="frame" x="20" y="207" width="335" height="326"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Code Snippet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kIC-7X-Nb7">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="20.5"/>
@@ -69,7 +69,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="code snipspet here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UCV-TD-fsu">
-                                        <rect key="frame" x="0.0" y="25.5" width="335" height="344.5"/>
+                                        <rect key="frame" x="0.0" y="25.5" width="335" height="300.5"/>
                                         <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -112,7 +112,6 @@
                         <outlet property="snippetDescription" destination="1Sg-EM-a2g" id="rtY-vX-lZL"/>
                         <outlet property="snippetTitle" destination="Qn3-Ng-Ymd" id="tSO-6B-10j"/>
                         <outlet property="snippetTxtArea" destination="UCV-TD-fsu" id="dX5-VD-hIV"/>
-                        <segue destination="YoQ-ay-g4G" kind="show" identifier="createToMaster" id="fLu-HT-KPP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="45C-KE-1Gm" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -143,7 +142,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Don't Touch Not Connected" id="Ukw-VB-8Le">
+                        <searchBar key="tableHeaderView" userInteractionEnabled="NO" contentMode="redraw" placeholder="User Interaction Not Enabled" id="Ukw-VB-8Le">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -225,8 +224,4 @@
             <point key="canvasLocation" x="-28" y="632"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="v3B-GM-AgK"/>
-        <segue reference="fLu-HT-KPP"/>
-    </inferredMetricsTieBreakers>
 </document>
