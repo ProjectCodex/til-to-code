@@ -1,6 +1,0 @@
-framework module Pods_TIL_to_CodeUITests {
-  umbrella header "Pods-TIL to CodeUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}
